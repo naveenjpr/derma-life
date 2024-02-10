@@ -177,7 +177,7 @@ export default function Service() {
               </button>
             </div>
           </div>
-          <h1>changing apply</h1>
+          
           {/* read more logic end */}
         </div>
       </section>
