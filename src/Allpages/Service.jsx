@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function Service() {
   const [isShowMore, setIsShowMore] = useState("");
-  const [isShowMore2, setIsShowMore2] = useState(false);
-  const [isShowMore3, setIsShowMore3] = useState(false);
-  const [isShowMore4, setIsShowMore4] = useState(false);
+  
 
   const toggleReadMoreLess = (a) => {
     if (isShowMore == "") {
@@ -35,8 +33,9 @@ export default function Service() {
             <div className="h-[2px] w-[90px] bg-green-400"> </div>
           </div>
         </div>
-        <div className="max-w-[1170px] mx-auto grid grid-cols-2 gap-[10px] ">
-          <div className="shadow-md shadow-[#ccc] flex flex-col items-center  min-h-[300px]">
+        {/* read more logig start */}
+        <div className="max-w-[1170px] mx-auto grid grid-cols-2 gap-[30px] ">
+          <div className=" flex flex-col items-center  ">
             <img
               src="https://dermalife.org.in/assets/img/image%20(1).png"
               className="bg-[#2f6c96] rounded-full text-center w-[70px] h-[70px]"
@@ -78,7 +77,8 @@ export default function Service() {
             </div>
             {/* read more logic end */}
           </div>
-          <div className="shadow-md shadow-[#ccc] flex flex-col    min-h-[300px] ">
+
+          <div className=" flex flex-col items-center  ">
             <img
               src="https://dermalife.org.in/assets/img/image%20(1).png"
               className="bg-[#2f6c96] rounded-full text-center w-[70px] h-[70px]"
@@ -118,6 +118,20 @@ export default function Service() {
                 {isShowMore == "2" ? "Read Less" : "Read More"}
               </button>
             </div>
+            {/* read more logic end */}
+          </div>
+
+          <div className=" flex flex-col items-center  ">
+            <img
+              src="https://dermalife.org.in/assets/img/image%20(1).png"
+              className="bg-[#2f6c96] rounded-full text-center w-[70px] h-[70px]"
+            />
+            <h2 className="text-[#2f6c96] font-bold text-[30px]">
+              {" "}
+              Mesotherapy for Hair Loss
+            </h2>
+            <hr className="h-[1px] w-[100%] border border-[black] my-[5px]" />
+            {/* read more logic */}
             <div className="card w-[100%]  flex flex-col bg-gray-100 rounded-md p-4 ">
               <p className="text-base leading-[35px] text-justify text-[#666] p-5 font-normal">
                 FUE hair transplant is a leading and most recent hair
@@ -147,6 +161,20 @@ export default function Service() {
                 {isShowMore == "3" ? "Read Less" : "Read More"}
               </button>
             </div>
+            {/* read more logic end */}
+          </div>
+
+          <div className=" flex flex-col items-center  ">
+            <img
+              src="https://dermalife.org.in/assets/img/image%20(1).png"
+              className="bg-[#2f6c96] rounded-full text-center w-[70px] h-[70px]"
+            />
+            <h2 className="text-[#2f6c96] font-bold text-[30px]">
+              {" "}
+              Mesotherapy for Hair Loss
+            </h2>
+            <hr className="h-[1px] w-[100%] border border-[black] my-[5px]" />
+            {/* read more logic */}
             <div className="card w-[100%]  flex flex-col bg-gray-100 rounded-md p-4 ">
               <p className="text-base leading-[35px] text-justify text-[#666] p-5 font-normal">
                 FUE hair transplant is a leading and most recent hair
@@ -176,8 +204,9 @@ export default function Service() {
                 {isShowMore == "4" ? "Read Less" : "Read More"}
               </button>
             </div>
+            {/* read more logic end */}
           </div>
-          
+
           {/* read more logic end */}
         </div>
       </section>
