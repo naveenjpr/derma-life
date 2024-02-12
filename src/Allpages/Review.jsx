@@ -6,6 +6,49 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "flex",
+        background: "grey",
+        width: "50px",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "absolute",
+        right: "-62px",
+        height: "50px",
+        borderRadius: "50%",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "flex",
+        background: "grey",
+        width: "50px",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "absolute",
+        left: "-60px",
+        height: "50px",
+        borderRadius: "50%",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 export default function Review() {
   const settings = {
     dots: true,
@@ -13,6 +56,8 @@ export default function Review() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
@@ -21,7 +66,7 @@ export default function Review() {
         <h1 className="text-center font-semibold">
           Hear From Our Customers Review
         </h1>
-        <div className="w-[1170px] mx-auto">
+        <div className="max-w-[1000px] mx-auto">
           <div className="w-[200px] mx-auto  flex justify-center items-center mb-[50px] ">
             <div className="h-[2px] w-[90px] bg-green-400"> </div>
             <figure className="mx-[5px]">
