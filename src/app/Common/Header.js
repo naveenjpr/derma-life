@@ -15,6 +15,8 @@ import Review from "@/Allpages/Review";
 import Tab from "@/Allpages/Tab";
 import Service from "@/Allpages/Service";
 import VIdeo from "@/Allpages/VIdeo";
+import WhyChoose from "@/Allpages/WhyChoose ";
+import BookAnAppointment from "@/Allpages/BookAnAppointment";
 
 export default function Header() {
   return (
@@ -250,6 +252,8 @@ export default function Header() {
       <Review />
       <Service />
       <VIdeo />
+      <WhyChoose />
+      <BookAnAppointment/>
     </>
   );
 }
