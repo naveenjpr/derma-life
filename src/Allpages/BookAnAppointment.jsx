@@ -3,7 +3,7 @@ import React from "react";
 export default function BookAnAppointment() {
   return (
     <>
-      <section className="w-[100%] mt-[100px]">
+      <section className="w-[100%] mt-[100px]" id="contact">
         <h1 className="text-center font-bold font-[Montserrat] text-[35px]">
           Book An Appointment
         </h1>

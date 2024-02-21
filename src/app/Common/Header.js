@@ -1,5 +1,5 @@
+"use client";
 import Link from "next/link";
-import React from "react";
 import logo from "../images/logo (1).svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -9,18 +9,96 @@ import {
   faPhone,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-import Gallery from "@/Allpages/Gallery";
 import Review from "@/Allpages/Review";
-
 import Tab from "@/Allpages/Tab";
 import Service from "@/Allpages/Service";
 import VIdeo from "@/Allpages/VIdeo";
 import WhyChoose from "@/Allpages/WhyChoose ";
 import BookAnAppointment from "@/Allpages/BookAnAppointment";
+import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
+  // button click modal open
+  const [modal, setmodal] = useState(false);
+
+  let modalshow = () => {
+    setmodal(!modal);
+  };
+  // button click modal end
+
   return (
     <>
+      <div
+        className={` ${
+          modal == true ? "top-[50%]" : "top-[-500px]"
+        } duration-1000 w-[700px] h-[600px] my-[10px] bg-[white] border z-[999999]	 border-[red] fixed left-[50%]  translate-x-[-50%] translate-y-[-50%]`}
+      >
+        <form className="p-[20px] z-[999999] relative">
+          <div className="flex justify-between items-center px-[5px] py-[2px]">
+            <h1 className="font-bold text-[#3b5b8b] text-[20px]">
+              Book An Appointment
+            </h1>
+            <span
+              className={` cursor-pointer font-bold text-[35px] text-[red]  ${
+                modal == false ? "true" : "false"
+              }`}
+              onClick={modalshow}
+            >
+              X
+            </span>
+          </div>
+          <div className="w-[100%] h-1 border border-[grey]"></div>
+          <div className=" px-[5px] py-[7px]">
+            <label className="font-bold text-[#3b5b8b] text-[20px]">
+              Full Name
+            </label>
+            <br />
+            <input
+              type="text"
+              className="border border-[grey] w-[100%] h-[50px] rounded-lg "
+            />
+          </div>
+          <div className=" px-[5px] py-[7px]">
+            <label className="font-bold text-[#3b5b8b] text-[20px]">
+              Phone Number
+            </label>
+            <br />
+            <input
+              type="tel"
+              className="border border-[grey] w-[100%] h-[50px] rounded-lg "
+            />
+          </div>
+          <div className=" px-[5px] py-[7px]">
+            <label className="font-bold text-[#3b5b8b] text-[20px]">
+              Booking Date
+            </label>
+            <br />
+            <input
+              type="date"
+              className="border border-[grey] w-[100%] h-[50px] rounded-lg "
+            />
+          </div>
+          <div className=" px-[5px] py-[7px]">
+            <label className="font-bold text-[#3b5b8b] text-[20px]">
+              Message
+            </label>
+            <br />
+
+            <textarea
+              className="border border-[grey] w-[100%] rounded-lg "
+              cols={5}
+              rows={5}
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            class="bg-[blue] p-[10px] cursor-pointer text-[white] rounded-lg "
+            value="Appointment"
+          ></input>
+        </form>
+      </div>
+
       {/* whatsup or phone start */}
       <div className="fixed right-[15px] bottom-[150px] z-10 text-white bg-[blue] p-[5px] rounded-full flex group origin-center	 ">
         <div className="w-[0px] group-hover:w-[100px]  h-[25px] text-center translate-x-[100px] origin-right duration-300 scale-x-0 group-hover:scale-x-100 group-hover:translate-x-[0px] group-hover:text-[white] ">
@@ -52,22 +130,25 @@ export default function Header() {
             <img src="https://dermalife.org.in/assets/img/2logo.png" />
           </figure>
           <nav>
-            <ul className="flex  py-[15px] text-[#666] font-semibold text-[15px] font-[Montserrat] items-center">
+            <ul
+              className="flex  py-[15px] text-[#666] font-semibold text-[15px] font-[Montserrat] items-center"
+              id="para"
+            >
               <li className="mx-[15px]  hover:text-[#111] relative">
-                <Link href={"/"}> Services</Link>
+                <Link href={"#service"}> Services</Link>
                 <span className="w-[70px] border h-[3px] bg-[#45497e]	  absolute top-[100%] left-0"></span>
               </li>
               <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"/"}>Meet The Doctor </Link>
+                <Link href={"#MeetTheDoctor"}>Meet The Doctor </Link>
               </li>
               <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"/"}> Gallery</Link>
+                <Link href={"#Gallery"}> Gallery</Link>
               </li>
               <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"/"}> Review</Link>
+                <Link href={"#Review"}> Review</Link>
               </li>
               <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"/"}>Contact Us </Link>
+                <Link href={"#contact"}>Contact Us </Link>
               </li>
               <li className="mx-[15px] hover:text-[#111] flex ">
                 <Link href={"tel:+6494461709"}>
@@ -79,7 +160,10 @@ export default function Header() {
                   7230019155{" "}
                 </Link>
               </li>
-              <button className="mx-[15px] bg-[#29779e] text-[white] p-[10px] hover:text-[#111]  animate-waving-hand">
+              <button
+                className="mx-[15px] bg-[#29779e] text-[white] p-[10px] hover:text-[#111]  animate-waving-hand "
+                onClick={modalshow}
+              >
                 <Link href={"/"}>Book An Appointment </Link>
               </button>
             </ul>
@@ -168,7 +252,7 @@ export default function Header() {
               </h1>
             </div>
 
-            <p className="text-[25px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
               Year of Experience in Hair <br /> Transplant
             </p>
           </div>
@@ -186,7 +270,7 @@ export default function Header() {
               </h1>
             </div>
 
-            <p className="text-[25px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
               Successful Cases
             </p>
           </div>
@@ -202,7 +286,7 @@ export default function Header() {
               <h1 className="text-[35px] text-[#111]">100%</h1>
             </div>
 
-            <p className="text-[25px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
               Success Rate
             </p>
           </div>
@@ -210,9 +294,12 @@ export default function Header() {
       </section>
       {/* Successful  case end */}
       {/* Best Dermatology, Hair Transplant & Aesthetic Clinic start */}
-      <section className="w-[1100px] mx-auto grid  grid-cols-[70%_auto] gap-4 justify-between items-center my-[70px]">
+      <section
+        className="w-[1100px] mx-auto grid  grid-cols-[70%_auto] gap-4 justify-between items-center my-[70px]"
+        id="MeetTheDoctor"
+      >
         <figcaption className=" ">
-          <h1 className="text-[black] text-[25px] font-bold">
+          <h1 className="text-[black] text-[20px] font-bold">
             Best Dermatology, Hair Transplant & <br /> Aesthetic Clinic
           </h1>
           <ul className=" text-left leading-[35px] font-normal">
@@ -253,7 +340,8 @@ export default function Header() {
       <Service />
       <VIdeo />
       <WhyChoose />
-      <BookAnAppointment/>
+      <BookAnAppointment />
+      <footer />
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function Tab() {
 
   return (
     <>
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1100px] mx-auto" id="Gallery">
         <div className="flex justify-between">
           <button
             className={`px-4 py-2 ${
@@ -66,59 +66,1720 @@ export default function Tab() {
         <div className="mt-4">
           {/* Content for each tab */}
           {activeTab === 1 && (
-            <ul className="w-[100%] flex flex-col	gap-[10px]  ">
-              <li className="	 ">
-                <div className=" w-[300px] h-96   border border-[red] relative group overflow-hidden">
-                  <img
-                    src="https://dermalife.org.in/assets/img/clinic/3.webp"
-                    className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
-                  />
-                  <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
-                </div>
-              </li>
-
-              <li className="	  ">
-                <div className="w-[300px] h-96  border border-[red] relative group overflow-hidden">
-                  <img
-                    src="https://dermalife.org.in/assets/img/clinic/3.webp"
-                    className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
-                  />
-                  <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
-                </div>
-              </li>
-              <li className="	">
-                <div className="w-[300px] h-96 border border-[red] relative group overflow-hidden">
-                  <img
-                    src="https://dermalife.org.in/assets/img/clinic/3.webp"
-                    className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
-                  />
-                  <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
-                </div>
-              </li>
-              <li className="	 ">
-                <div className="w-[300px] h-64 border border-[red] relative group overflow-hidden">
-                  <img
-                    src="https://dermalife.org.in/assets/img/clinic/3.webp"
-                    className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
-                  />
-                  <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
-                </div>
-              </li>
-              <li className="	">
-                <div className="w-[300px] h-96 border border-[red] relative group overflow-hidden">
-                  <img
-                    src="https://dermalife.org.in/assets/img/clinic/3.webp"
-                    className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
-                  />
-                  <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
-                </div>
-              </li>
-            </ul>
+            <div className="w-[100%] grid grid-cols-3	 gap-[10px] ">
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           )}
-          {activeTab === 2 && <div>Tab 2 Content</div>}
-          {activeTab === 3 && <div>Tab 3 Content</div>}
-          {activeTab === 4 && <div>Tab 4 Content</div>}
-          {activeTab === 5 && <div>Tab 5 Content</div>}
+          {activeTab === 2 && (
+            <div className="w-[100%] grid grid-cols-3	 gap-[10px] ">
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
+          {activeTab === 3 && (
+            <div className="w-[100%] grid grid-cols-3	 gap-[10px] ">
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
+          {activeTab === 4 && (
+            <div className="w-[100%] grid grid-cols-3	 gap-[10px] ">
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
+          {activeTab === 5 && (
+            <div className="w-[100%] grid grid-cols-3	 gap-[10px] ">
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul className="">
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[400px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+                <li className="	mb-[20px] ">
+                  <div className=" w-[90%] h-[200px]    relative group overflow-hidden">
+                    <img
+                      src="https://dermalife.org.in/assets/img/clinic/3.webp"
+                      className="w-[100%] scale-100 group-hover:scale-105  h-[100%]"
+                    />
+                    <div className="w-[100%] h-[100%] bg-[black] opacity-50 origin-top scale-0 group-hover:scale-100 absolute top-[0px] duration-1000 left-0"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>

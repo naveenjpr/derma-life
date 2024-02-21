@@ -62,7 +62,7 @@ export default function Review() {
 
   return (
     <>
-      <section className="w-[100%] my-[50px] text-[35px]">
+      <section className="w-[100%] my-[50px] text-[35px]" id="Review">
         <h1 className="text-center font-semibold">
           Hear From Our Customers Review
         </h1>

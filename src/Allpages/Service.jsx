@@ -17,7 +17,7 @@ export default function Service() {
 
   return (
     <>
-      <section className="w-[100%]">
+      <section className="w-[100%]" id="service">
         <h1 className="text-center font-bold font-[Montserrat] text-[35px]">
           Services
         </h1>
