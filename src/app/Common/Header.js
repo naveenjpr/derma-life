@@ -32,7 +32,7 @@ export default function Header() {
       <div
         className={` ${
           modal == true ? "top-[50%]" : "top-[-500px]"
-        } duration-1000 w-[700px] h-[600px] my-[10px] bg-[white] border z-[999999]	 border-[red] fixed left-[50%]  translate-x-[-50%] translate-y-[-50%]`}
+        } duration-1000 w-[700px] h-[600px] my-[10px] bg-[white] border z-[999999]	 fixed left-[50%]  translate-x-[-50%] translate-y-[-50%]`}
       >
         <form className="p-[20px] z-[999999] relative">
           <div className="flex justify-between items-center px-[5px] py-[2px]">
