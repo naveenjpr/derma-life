@@ -22,38 +22,58 @@ export default function BookAnAppointment() {
         <div className="max-w-[800px] mx-auto">
           <form class="">
             <div class="grid grid-cols-2 gap[20px] justify-between text-[#666] font-[300] text-[20px]">
-              <div className="my-[5px]" >
+              <div className="my-[5px]">
                 <label className="font-[bold]">Full Name</label>
                 <br />
-                <input type="text" className="border border-[#ccc] rounded-lg w-[95%] h-[40px]" />
+                <input
+                  type="text"
+                  className="border border-[#ccc] rounded-lg w-[95%] h-[40px]"
+                />
               </div>
               <div className="my-[5px]">
                 <label className="font-[bold]">Email</label>
                 <br />
-                <input type="email" className="border border-[#ccc] rounded-lg w-[95%] h-[40px]" />
+                <input
+                  type="email"
+                  className="border border-[#ccc] rounded-lg w-[95%] h-[40px]"
+                />
               </div>
-              <div  className="my-[5px]">
+              <div className="my-[5px]">
                 <label className="font-[bold]">subject</label>
                 <br />
-                <input type="text" className="border border-[#ccc] rounded-lg w-[95%] h-[40px]" />
+                <input
+                  type="text"
+                  className="border border-[#ccc] rounded-lg w-[95%] h-[40px]"
+                />
               </div>
               <div className="my-[5px]">
                 <label className="font-[bold]">phone</label>
                 <br />
-                <input type="Tel" maxlength="10"className="border border-[#ccc] rounded-lg w-[95%] h-[40px]" />
+                <input
+                  type="Tel"
+                  maxlength="10"
+                  className="border border-[#ccc] rounded-lg w-[95%] h-[40px]"
+                />
               </div>
-              <div  className="col-span-2 my-[5px] ">
+              <div className="col-span-2 my-[5px] ">
                 <label className="font-[bold]">Message</label>
                 <br />
-                <textarea name="" rows="5"  className="border border-[#ccc] w-[100%] "></textarea>
+                <textarea
+                  name=""
+                  rows="5"
+                  className="border border-[#ccc] w-[100%] "
+                ></textarea>
               </div>
             </div>
-            <div  className="text-center font-[500]">
-              
-                <input type="button" value="Send Message" className="border text-white border-[#ccc] bg-[#29779e] rounded-lg w-[25%] h-[40px]" />
-              </div>
+            <div className="text-center font-[500]">
+              <input
+                type="button"
+                value="Send Message"
+                className="border text-white border-[#ccc] bg-[#29779e] rounded-lg w-[25%] h-[40px]"
+              />
+            </div>
           </form>
-        </div> 
+        </div>
       </section>
     </>
   );

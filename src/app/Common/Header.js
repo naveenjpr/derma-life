@@ -31,8 +31,10 @@ export default function Header() {
     <>
       <div
         className={` ${
-          modal == true ? "top-[50%]" : "top-[-500px]"
-        } duration-1000 w-[700px] h-[600px] my-[10px] bg-[white] border z-[999999]	 fixed left-[50%]  translate-x-[-50%] translate-y-[-50%]`}
+          modal == true ? "top-[0px]" : "top-[-1000px]"
+        } duration-1000 w-[700px]  my-[10px] bg-[white] border z-[999999]	 fixed left-[50%]  translate-x-[-50%] translate-y-[
+      -50%
+    ]`}
       >
         <form className="p-[20px] z-[999999] relative">
           <div className="flex justify-between items-center px-[5px] py-[2px]">
@@ -40,16 +42,17 @@ export default function Header() {
               Book An Appointment
             </h1>
             <span
-              className={` cursor-pointer font-bold text-[35px] text-[red]  ${
-                modal == false ? "true" : "false"
-              }`}
+              className={` cursor-pointer font-bold text-[
+      35px
+    ] text-[red
+    ]  ${modal == false ? "true" : "false"}`}
               onClick={modalshow}
             >
               X
             </span>
           </div>
           <div className="w-[100%] h-1 border border-[grey]"></div>
-          <div className=" px-[5px] py-[7px]">
+          <div className=" px-[5px] py-[2px]">
             <label className="font-bold text-[#3b5b8b] text-[20px]">
               Full Name
             </label>
@@ -59,7 +62,7 @@ export default function Header() {
               className="border border-[grey] w-[100%] h-[50px] rounded-lg "
             />
           </div>
-          <div className=" px-[5px] py-[7px]">
+          <div className=" px-[5px] py-[2px]">
             <label className="font-bold text-[#3b5b8b] text-[20px]">
               Phone Number
             </label>
@@ -69,7 +72,7 @@ export default function Header() {
               className="border border-[grey] w-[100%] h-[50px] rounded-lg "
             />
           </div>
-          <div className=" px-[5px] py-[7px]">
+          <div className=" px-[5px] py-[2px]">
             <label className="font-bold text-[#3b5b8b] text-[20px]">
               Booking Date
             </label>
@@ -79,7 +82,7 @@ export default function Header() {
               className="border border-[grey] w-[100%] h-[50px] rounded-lg "
             />
           </div>
-          <div className=" px-[5px] py-[7px]">
+          <div className=" px-[5px] py-[2px]">
             <label className="font-bold text-[#3b5b8b] text-[20px]">
               Message
             </label>

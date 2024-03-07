@@ -16,16 +16,14 @@
   }
 }
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-body{
-  font-family: 'Montserrat', sans-serif;
-  
-
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth !important;
 }
 /* 
   .sliderone{
