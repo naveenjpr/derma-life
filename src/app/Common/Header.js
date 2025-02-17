@@ -1,30 +1,31 @@
-"use client";
-import Link from "next/link";
-import logo from "../images/logo (1).svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+"use client"
+import Link from "next/link"
+import logo from "../images/logo (1).svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import {
   faFaceSmile,
   faLaptopMedical,
   faPhone,
   faThumbsUp,
-} from "@fortawesome/free-solid-svg-icons";
-import Review from "@/Allpages/Review";
-import Tab from "@/Allpages/Tab";
-import Service from "@/Allpages/Service";
-import VIdeo from "@/Allpages/VIdeo";
-import WhyChoose from "@/Allpages/WhyChoose ";
-import BookAnAppointment from "@/Allpages/BookAnAppointment";
-import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+} from "@fortawesome/free-solid-svg-icons"
+import Review from "@/Allpages/Review"
+import Tab from "@/Allpages/Tab"
+import Service from "@/Allpages/Service"
+import VIdeo from "@/Allpages/VIdeo"
+import WhyChoose from "@/Allpages/WhyChoose "
+import BookAnAppointment from "@/Allpages/BookAnAppointment"
+import { useEffect, useId, useState } from "react"
+import { useParams, usePathname, useRouter } from "next/navigation"
+import { useLocation } from "react-router-dom"
+import Footer from "./Footer"
 
 export default function Header() {
-  // button click modal open
-  const [modal, setmodal] = useState(false);
+  const [modal, setmodal] = useState(false)
 
   let modalshow = () => {
-    setmodal(!modal);
-  };
+    setmodal(!modal)
+  }
   // button click modal end
 
   return (
@@ -96,7 +97,7 @@ export default function Header() {
           </div>
           <input
             type="submit"
-            class="bg-[blue] p-[10px] cursor-pointer text-[white] rounded-lg "
+            className="bg-[blue] p-[10px] cursor-pointer text-[white] rounded-lg "
             value="Appointment"
           ></input>
         </form>
@@ -127,112 +128,129 @@ export default function Header() {
       </div>
       {/* whatsup or phone end */}
       {/* header section start */}
-      <header className="w-[100%]  bg-stone-200 sticky top-0 z-[9999] 	">
-        <section className="max-w-[1170px] mx-auto flex justify-between items-center py-[10px] ">
-          <figure>
-            <img src="https://dermalife.org.in/assets/img/2logo.png" />
+      <header className="w-full bg-stone-200 sticky top-0 z-[9999]">
+        <section className="max-w-[1170px] mx-auto flex flex-wrap justify-between items-center py-2 px-4">
+          {/* Logo Section */}
+          <figure className="w-1/2 sm:w-auto">
+            <img
+              src="https://dermalife.org.in/assets/img/2logo.png"
+              className="w-full max-w-[150px] sm:max-w-none"
+              alt="Logo"
+            />
           </figure>
-          <nav>
-            <ul
-              className="flex  py-[15px] text-[#666] font-semibold text-[15px] font-[Montserrat] items-center"
-              id="para"
-            >
-              <li className="mx-[15px]  hover:text-[#111] relative">
-                <Link href={"#service"}> Services</Link>
-                <span className="w-[70px] border h-[3px] bg-[#45497e]	  absolute top-[100%] left-0"></span>
+
+          {/* Navigation */}
+          <nav className="w-full sm:w-auto flex flex-col sm:flex-row items-center mt-4 sm:mt-0">
+            {/* Navigation Links */}
+            <ul className="flex flex-col sm:flex-row sm:items-center py-2 sm:py-0 text-[#666] font-semibold text-sm sm:text-base space-y-2 sm:space-y-0 sm:space-x-4">
+              <li className="hover:text-[#111] relative">
+                <Link href="#service">Services</Link>
+                <span className="hidden sm:block w-[70px] border h-[3px] bg-[#45497e] absolute top-[100%] left-0"></span>
               </li>
-              <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"#MeetTheDoctor"}>Meet The Doctor </Link>
+              <li className="hover:text-[#111]">
+                <Link href="#MeetTheDoctor">Meet The Doctor</Link>
               </li>
-              <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"#Gallery"}> Gallery</Link>
+              <li className="hover:text-[#111]">
+                <Link href="#Gallery">Gallery</Link>
               </li>
-              <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"#Review"}> Review</Link>
+              <li className="hover:text-[#111]">
+                <Link href="#Review">Review</Link>
               </li>
-              <li className="mx-[15px]  hover:text-[#111]">
-                <Link href={"#contact"}>Contact Us </Link>
+              <li className="hover:text-[#111]">
+                <Link href="#contact">Contact Us</Link>
               </li>
-              <li className="mx-[15px] hover:text-[#111] flex ">
-                <Link href={"tel:+6494461709"}>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    className="w-[20px] inline"
-                  />{" "}
-                  7230019155{" "}
+              <li className="hover:text-[#111] flex items-center">
+                <Link href="tel:+6494461709" className="flex items-center">
+                  <FontAwesomeIcon icon={faPhone} className="w-5 inline mr-2" />
+                  7230019155
                 </Link>
               </li>
-              <button
-                className="mx-[15px] bg-[#29779e] text-[white] p-[10px] hover:text-[#111]  animate-waving-hand "
-                onClick={modalshow}
-              >
-                <Link href={"/"}>Book An Appointment </Link>
-              </button>
             </ul>
+
+            {/* Book Appointment Button */}
+            <button
+              className="bg-[#29779e] text-white px-4 py-2 rounded hover:bg-[#245d7f] sm:ml-4"
+              onClick={modalshow}
+            >
+              <Link href="/">Book An Appointment</Link>
+            </button>
           </nav>
         </section>
       </header>
+
       {/* header section end */}
       {/* form section start */}
 
-      <section className="w-[100%]">
-        <figure class="bg-[url('https://dermalife.org.in/assets/img/background12apr.webp')]  bg-cover bg-fixed">
-          <h1 className="text-[50px] text-center text-[white] pt-[50px] pb-[19px]">
+      <section className="w-full">
+        <figure className="bg-[url('https://dermalife.org.in/assets/img/background12apr.webp')] bg-cover bg-fixed">
+          {/* Heading Section */}
+          <h1 className="text-[30px] sm:text-[40px] lg:text-[50px] text-center text-white pt-[50px] pb-[19px]">
             Best Hair Transplant in Delhi
           </h1>
-          <p className="text-center text-[white] text-[18px] leading-6">
+          <p className="text-center text-white text-[16px] sm:text-[18px] leading-6 px-4">
             The art of medicine consists in amusing the patient while nature
             <br />
             cures the disease. Treatment without prevention is simply
             unsustainable.
           </p>
-          <div className="max-w-[1000px] mx-auto py-[30px] flex justify-between items-center">
-            <figure className="basis-1/2">
+
+          {/* Main Content Section */}
+          <div className="max-w-[1000px] mx-auto py-[30px] flex flex-wrap lg:flex-nowrap justify-between items-center">
+            {/* Image Section */}
+            <figure className="basis-full lg:basis-1/2 mb-4 lg:mb-0">
               <img
                 src="https://dermalife.org.in/assets/img/banner-new.webp"
-                className=" h-[500px]"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+                alt="Banner"
               />
             </figure>
-            <form className="bg-[white] px-[40px] text-[15px] font-semibold text-[#666] ">
-              <h3 className="text-center text-[24px] leading-[35px] p-[15px] text-[#3b5b8b] font-bold">
+
+            {/* Appointment Form */}
+            <form className="bg-white px-[20px] sm:px-[30px] lg:px-[40px] py-[20px] w-full lg:w-auto text-[15px] font-semibold text-[#666] rounded shadow-md">
+              <h3 className="text-center text-[20px] sm:text-[24px] leading-[35px] p-[15px] text-[#3b5b8b] font-bold">
                 Book An Appointment
               </h3>
 
-              <div className="w-full  pt-[20px]">
-                <label className="text-[15px] font-medium mb-[3px]">
-                  First name:
+              {/* First Name */}
+              <div className="w-full pt-[15px]">
+                <label className="text-[14px] sm:text-[15px] font-medium mb-[3px] block">
+                  First Name:
                 </label>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="h-[42px] w-full border border-[#ccc] px-[15px] py-[10px] rounded"
+                />
+              </div>
 
-                <br />
+              {/* Phone Number */}
+              <div className="w-full pt-[15px]">
+                <label className="text-[14px] sm:text-[15px] font-medium mb-[3px] block">
+                  Phone Number:
+                </label>
                 <input
                   type="text"
-                  placeholder="name"
-                  className="h-[42px] w-[100%] border border-[#ccc] px-[15px] py-[10px] rounded"
+                  placeholder="Phone Number"
+                  className="h-[42px] w-full border border-[#ccc] px-[15px] py-[10px] rounded"
                 />
               </div>
-              <div className="w-full  pt-[20px] ">
-                <label>Phone Number</label>
-                <br />
-                <input
-                  type="text"
-                  placeholder="name"
-                  className="h-[42px] w-[100%] border border-[#ccc] px-[15px] py-[10px] rounded"
-                />
-              </div>
-              <div className="w-full pt-[20px]">
-                <label>Message:</label>
-                <br />
+
+              {/* Message */}
+              <div className="w-full pt-[15px]">
+                <label className="text-[14px] sm:text-[15px] font-medium mb-[3px] block">
+                  Message:
+                </label>
                 <textarea
                   cols="20"
                   rows="5"
-                  placeholder=""
-                  className="w-[100%] border border-[#ccc]"
+                  placeholder="Enter your message"
+                  className="w-full border border-[#ccc] px-[15px] py-[10px] rounded"
                 ></textarea>
               </div>
 
-              <div className="w-[300px] mx-auto flex justify-center items-center py-[25px]">
-                <button className=" text-center text-[white]  bg-[#29779e] px-[35px] font-semibold leading-[25px] text-[20px] py-[15px] rounded-md">
+              {/* Submit Button */}
+              <div className="w-full flex justify-center items-center py-[20px]">
+                <button className="text-center text-white bg-[#29779e] px-[25px] sm:px-[35px] font-semibold leading-[25px] text-[16px] sm:text-[20px] py-[10px] sm:py-[15px] rounded-md hover:bg-[#245d7f]">
                   Appointment
                 </button>
               </div>
@@ -240,26 +258,29 @@ export default function Header() {
           </div>
         </figure>
       </section>
+
       {/* form section end */}
 
       {/* Successful  case start */}
-      <section className="w-[100%] bg-[white] ">
-        <div className="max-w-[1170px] mx-auto flex justify-between items-center gap-[15px] mt-[60px]">
-          <div className="border border-[#ccc] rounded basis-1/3  text-center items-center justify-center flex flex-col h-[250px]">
+      <section className="w-full bg-white">
+        <div className="max-w-[1170px] mx-auto flex flex-wrap gap-[15px] justify-between items-center mt-[60px]">
+          {/* Card 1: Years of Experience */}
+          <div className="border border-[#ccc] rounded basis-full sm:basis-[calc(50%-10px)] lg:basis-1/3 text-center flex flex-col items-center justify-center h-[250px] p-4">
             <figure className="font-bold p-[20px] rounded-full bg-[#d4d4e0] my-[22px]">
-              <FontAwesomeIcon icon={faLaptopMedical} className="w-[30px] " />
+              <FontAwesomeIcon icon={faLaptopMedical} className="w-[30px]" />
             </figure>
             <div>
-              <h1 className="text-[35px] text-[#111]">
+              <h1 className="text-[30px] sm:text-[35px] text-[#111]">
                 15<span className="mx-[5px]">+</span>
               </h1>
             </div>
-
-            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[16px] sm:text-[20px] text-[#494545] leading-[30px] sm:leading-[35px] font-bold mb-[8px]">
               Year of Experience in Hair <br /> Transplant
             </p>
           </div>
-          <div className="border border-[#ccc] rounded basis-1/3  text-center items-center justify-center flex flex-col h-[250px]">
+
+          {/* Card 2: Successful Cases */}
+          <div className="border border-[#ccc] rounded basis-full sm:basis-[calc(50%-10px)] lg:basis-1/3 text-center flex flex-col items-center justify-center h-[250px] p-4">
             <figure className="font-bold p-[20px] rounded-full bg-[#bcebb9] my-[22px]">
               <FontAwesomeIcon
                 icon={faFaceSmile}
@@ -268,16 +289,17 @@ export default function Header() {
               />
             </figure>
             <div>
-              <h1 className="text-[35px] text-[#111]">
+              <h1 className="text-[30px] sm:text-[35px] text-[#111]">
                 10000<span className="mx-[5px]">+</span>
               </h1>
             </div>
-
-            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[16px] sm:text-[20px] text-[#494545] leading-[30px] sm:leading-[35px] font-bold mb-[8px]">
               Successful Cases
             </p>
           </div>
-          <div className="border border-[#ccc] rounded basis-1/3  text-center items-center justify-center flex flex-col h-[250px]">
+
+          {/* Card 3: Success Rate */}
+          <div className="border border-[#ccc] rounded basis-full sm:basis-[calc(50%-10px)] lg:basis-1/3 text-center flex flex-col items-center justify-center h-[250px] p-4">
             <figure className="font-bold p-[20px] rounded-full bg-[#8992e0] my-[22px]">
               <FontAwesomeIcon
                 icon={faThumbsUp}
@@ -286,26 +308,29 @@ export default function Header() {
               />
             </figure>
             <div>
-              <h1 className="text-[35px] text-[#111]">100%</h1>
+              <h1 className="text-[30px] sm:text-[35px] text-[#111]">100%</h1>
             </div>
-
-            <p className="text-[20px] text-[#494545] leading-[35px] font-bold mb-[8px]">
+            <p className="text-[16px] sm:text-[20px] text-[#494545] leading-[30px] sm:leading-[35px] font-bold mb-[8px]">
               Success Rate
             </p>
           </div>
         </div>
       </section>
+
       {/* Successful  case end */}
       {/* Best Dermatology, Hair Transplant & Aesthetic Clinic start */}
       <section
-        className="w-[1100px] mx-auto grid  grid-cols-[70%_auto] gap-4 justify-between items-center my-[70px]"
+        className="w-full max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-[70%_auto] gap-4 justify-between items-center my-[70px] px-4"
         id="MeetTheDoctor"
       >
-        <figcaption className=" ">
-          <h1 className="text-[black] text-[20px] font-bold">
-            Best Dermatology, Hair Transplant & <br /> Aesthetic Clinic
+        {/* Text Content */}
+        <figcaption className="space-y-4">
+          <h1 className="text-black text-[18px] sm:text-[20px] font-bold">
+            Best Dermatology, Hair Transplant &{" "}
+            <br className="hidden sm:block" />
+            Aesthetic Clinic
           </h1>
-          <ul className=" text-left leading-[35px] font-normal">
+          <ul className="text-left leading-[28px] sm:leading-[35px] font-normal space-y-2 text-[14px] sm:text-[16px]">
             <li>Times Healthcare Achievers Award 2018 Winner.</li>
             <li>
               Fellow Advanced Dermatology, LASERs & Dermatologic Surgery
@@ -317,21 +342,28 @@ export default function Header() {
               Dr. Gaurav Garg is the Director of Dermalife who is a renowned and
               certified dermatologist and Hair Transplant Specialist in Delhi.
               He has about 13 years of experience in Hair Transplant, Lasers,
-              Dermatologic surgeries, and Cosmetic procedures. He has MD in
+              Dermatologic surgeries, and Cosmetic procedures. He has an MD in
               Dermatology from prestigious Seth GS Medical College and KEM
               Hospital, Mumbai.
             </li>
           </ul>
         </figcaption>
-        <figure className="">
-          <img src="https://dermalife.org.in/assets/img/doctor-profile.webp" />
-          <h1 className="text-center text-[20px] ">
-            <span className="font-bold">Dr Gaurav Garg MBBS,</span>
+
+        {/* Image Section */}
+        <figure className="text-center space-y-4">
+          <img
+            src="https://dermalife.org.in/assets/img/doctor-profile.webp"
+            alt="Dr. Gaurav Garg"
+            className="w-full max-w-[300px] mx-auto rounded-md"
+          />
+          <h1 className="text-[18px] sm:text-[20px]">
+            <span className="font-bold">Dr. Gaurav Garg MBBS,</span>
             <br />
             MD (KEM-MUMBAI)
           </h1>
         </figure>
       </section>
+
       {/* Best Dermatology, Hair Transplant & Aesthetic Clinic end */}
 
       {/* gallery start  */}
@@ -344,7 +376,7 @@ export default function Header() {
       <VIdeo />
       <WhyChoose />
       <BookAnAppointment />
-      <footer />
+      <Footer/>
     </>
-  );
+  )
 }

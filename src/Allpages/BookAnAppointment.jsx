@@ -20,8 +20,8 @@ export default function BookAnAppointment() {
           </div>
         </div>
         <div className="max-w-[800px] mx-auto">
-          <form class="">
-            <div class="grid grid-cols-2 gap[20px] justify-between text-[#666] font-[300] text-[20px]">
+          <form className="">
+            <div className="grid grid-cols-2 gap[20px] justify-between text-[#666] font-[300] text-[20px]">
               <div className="my-[5px]">
                 <label className="font-[bold]">Full Name</label>
                 <br />
@@ -51,7 +51,7 @@ export default function BookAnAppointment() {
                 <br />
                 <input
                   type="Tel"
-                  maxlength="10"
+                  maxLength="10"
                   className="border border-[#ccc] rounded-lg w-[95%] h-[40px]"
                 />
               </div>
