@@ -22,9 +22,14 @@ import Footer from "./Footer"
 
 export default function Header() {
   const [modal, setmodal] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   let modalshow = () => {
     setmodal(!modal)
+  }
+
+  let toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen)
   }
   // button click modal end
 
@@ -129,23 +134,46 @@ export default function Header() {
       {/* whatsup or phone end */}
       {/* header section start */}
       <header className="w-full bg-stone-200 sticky top-0 z-[9999]">
-        <section className="max-w-[1170px] mx-auto flex flex-wrap justify-between items-center py-2 px-4">
+        <section className="max-w-[1170px] mx-auto flex justify-between items-center py-2 px-4">
           {/* Logo Section */}
-          <figure className="w-1/2 sm:w-auto">
+          <figure className="w-auto z-[10000]">
             <img
               src="https://dermalife.org.in/assets/img/2logo.png"
-              className="w-full max-w-[150px] sm:max-w-none"
+              className="w-full max-w-[120px] sm:max-w-[150px]"
               alt="Logo"
             />
           </figure>
 
-          {/* Navigation */}
-          <nav className="w-full sm:w-auto flex flex-col sm:flex-row items-center mt-4 sm:mt-0">
+          {/* Hamburger Menu Icon - Visible on mobile/tablet */}
+          <button
+            className="lg:hidden flex flex-col justify-center items-center w-8 h-8 z-[10000] relative"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`block w-6 h-0.5 bg-[#666] transition-all duration-300 ${
+                mobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
+              }`}
+            ></span>
+            <span
+              className={`block w-6 h-0.5 bg-[#666] my-1 transition-all duration-300 ${
+                mobileMenuOpen ? "opacity-0" : ""
+              }`}
+            ></span>
+            <span
+              className={`block w-6 h-0.5 bg-[#666] transition-all duration-300 ${
+                mobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
+              }`}
+            ></span>
+          </button>
+
+          {/* Desktop Navigation - Hidden on mobile/tablet */}
+          <nav className="hidden lg:flex items-center">
             {/* Navigation Links */}
-            <ul className="flex flex-col sm:flex-row sm:items-center py-2 sm:py-0 text-[#666] font-semibold text-sm sm:text-base space-y-2 sm:space-y-0 sm:space-x-4">
+            <ul className="flex items-center py-2 text-[#666] font-semibold text-base space-x-6">
               <li className="hover:text-[#111] relative">
                 <Link href="#service">Services</Link>
-                <span className="hidden sm:block w-[70px] border h-[3px] bg-[#45497e] absolute top-[100%] left-0"></span>
+                <span className="w-[70px] border h-[3px] bg-[#45497e] absolute top-[100%] left-0"></span>
               </li>
               <li className="hover:text-[#111]">
                 <Link href="#MeetTheDoctor">Meet The Doctor</Link>
@@ -169,12 +197,75 @@ export default function Header() {
 
             {/* Book Appointment Button */}
             <button
-              className="bg-[#29779e] text-white px-4 py-2 rounded hover:bg-[#245d7f] sm:ml-4"
+              className="bg-[#29779e] text-white px-4 py-2 rounded hover:bg-[#245d7f] ml-4"
               onClick={modalshow}
             >
-              <Link href="/">Book An Appointment</Link>
+              Book An Appointment
             </button>
           </nav>
+
+          {/* Mobile/Tablet Navigation - Slides from left */}
+          <nav
+            className={`fixed top-0 left-0 h-full w-[280px] bg-stone-100 shadow-2xl transform transition-transform duration-300 ease-in-out z-[9998] lg:hidden ${
+              mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <div className="pt-20 px-6">
+              {/* Navigation Links */}
+              <ul className="flex flex-col space-y-4 text-[#666] font-semibold text-base">
+                <li className="hover:text-[#111] py-2 border-b border-gray-300">
+                  <Link href="#service" onClick={toggleMobileMenu}>
+                    Services
+                  </Link>
+                </li>
+                <li className="hover:text-[#111] py-2 border-b border-gray-300">
+                  <Link href="#MeetTheDoctor" onClick={toggleMobileMenu}>
+                    Meet The Doctor
+                  </Link>
+                </li>
+                <li className="hover:text-[#111] py-2 border-b border-gray-300">
+                  <Link href="#Gallery" onClick={toggleMobileMenu}>
+                    Gallery
+                  </Link>
+                </li>
+                <li className="hover:text-[#111] py-2 border-b border-gray-300">
+                  <Link href="#Review" onClick={toggleMobileMenu}>
+                    Review
+                  </Link>
+                </li>
+                <li className="hover:text-[#111] py-2 border-b border-gray-300">
+                  <Link href="#contact" onClick={toggleMobileMenu}>
+                    Contact Us
+                  </Link>
+                </li>
+                <li className="hover:text-[#111] py-2 border-b border-gray-300 flex items-center">
+                  <Link href="tel:+6494461709" className="flex items-center" onClick={toggleMobileMenu}>
+                    <FontAwesomeIcon icon={faPhone} className="w-5 inline mr-2" />
+                    7230019155
+                  </Link>
+                </li>
+              </ul>
+
+              {/* Book Appointment Button */}
+              <button
+                className="bg-[#29779e] text-white px-6 py-3 rounded hover:bg-[#245d7f] mt-6 w-full"
+                onClick={() => {
+                  modalshow()
+                  toggleMobileMenu()
+                }}
+              >
+                Book An Appointment
+              </button>
+            </div>
+          </nav>
+
+          {/* Overlay - Closes menu when clicked */}
+          {mobileMenuOpen && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 z-[9997] lg:hidden"
+              onClick={toggleMobileMenu}
+            ></div>
+          )}
         </section>
       </header>
 
